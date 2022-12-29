@@ -11,6 +11,8 @@ border-radius: 24px;
 padding: 10px 20px;
 border: none;
 cursor: pointer;
+margin: 20px;
+font-size:15px;
  
 `}
 `
