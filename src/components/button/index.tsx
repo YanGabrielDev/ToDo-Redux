@@ -1,8 +1,11 @@
-export interface Button{
-    text?: string
+import { ReactNode } from 'react'
+import * as Styled from './styled'
+export interface ButtonInterface{
+    children?: ReactNode ,
+    color: 'green' | 'blue' | 'red'
 }
-export const Button = ({text}: Button) => {
+export const Button = ({children, color = 'blue'}: ButtonInterface) => {
     return(
-        <button>{text}</button>
+        <Styled.Button color={color}>{children}</Styled.Button>
     )
 }
