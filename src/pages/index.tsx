@@ -1,11 +1,12 @@
-
-import { Button } from '../components/Button'
-
+import { Form } from "../components/Form"
+import { Content } from "../components/Content"
 
 export default function Home() {
   return (
     <>
-     <Button color='green'>Salvar</Button>
+      <Content>
+        <Form />
+      </Content>
     </>
   )
 }
