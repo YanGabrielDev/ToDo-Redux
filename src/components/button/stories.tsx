@@ -1,17 +1,18 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from './index';
+import { Button, ButtonInterface } from './index';
 
 export default {
   title: 'Example/Button',
   component: Button,
   argTypes: {
-    Text: 'opa' ,
+    children: 'opa' ,
+    // color: 'green' 
   },
 } 
 
-export const Template = (args: Button) => <Button {...args}/>
+export const Template = (args: ButtonInterface) => <Button {...args}/>
 
 
 
