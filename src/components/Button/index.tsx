@@ -1,6 +1,7 @@
-import { ReactNode } from "react"
+import { ButtonHTMLAttributes, ReactNode } from "react"
 import * as Styled from "./styled"
-export interface ButtonInterface {
+import React, {} from "react"
+export interface ButtonInterface extends ButtonHTMLAttributes<HTMLButtonElement> {
   children?: ReactNode | string
   color: "green" | "blue" | "red"
 }

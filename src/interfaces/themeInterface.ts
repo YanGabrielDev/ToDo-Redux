@@ -2,7 +2,7 @@ export interface ThemeInterface{
       colors?:{
           green?: string,
           red?: string,
-          white?: string,       
+          text?: string,       
           ciano?: string,       
           blue?: string,       
           gray?: string,

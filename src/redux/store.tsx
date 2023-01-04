@@ -1,9 +1,10 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit"
+import sliceTodos from "./sliceTodos"
 
 export const store = configureStore({
-    reducer: {
-       
-    }
+  reducer: {
+    todos: sliceTodos,
+  },
 })
 
 export default store

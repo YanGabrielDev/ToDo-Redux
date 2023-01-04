@@ -11,12 +11,15 @@ overflow: hidden;
 `}
 `
 export const Title = styled.input`
+${({theme}) => css`
+color: ${theme.colors.text};
 padding: 20px;
 border: none;
 outline: none;
 margin: 20px;
 width: 90%;
 font-size: 30px;
+`}
 
 `
 export const Task = styled.textarea`
