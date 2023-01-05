@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react"
+import { MouseEventHandler, ReactNode, useState } from "react"
 import { useDispatch } from "react-redux"
 import { Button } from "../Button"
 import * as Styled from "./styles"
@@ -7,12 +7,14 @@ export interface FormInterface {
   task: string
   handleChangeTask: (event: React.ChangeEvent<HTMLTextAreaElement>) => void
   handleChangeTitle: (event: React.ChangeEvent<HTMLInputElement>) => void
+  onClick: MouseEventHandler<HTMLButtonElement>
 }
 export const Form = ({
   task,
   title,
   handleChangeTask,
   handleChangeTitle,
+  onClick,
 }: FormInterface) => {
   const dispatch = useDispatch()
 
@@ -22,7 +24,9 @@ export const Form = ({
         value={title}
         onChange={(e) => handleChangeTitle(e)}
         placeholder="Título"
-      />
+        />
+
+        
       <Styled.Task
         value={task}
         onChange={(e) => handleChangeTask(e)}
@@ -30,7 +34,7 @@ export const Form = ({
         rows={5}
       />
       <Styled.ButtonContainer>
-        <Button color="blue">Criar</Button>
+        <Button color="blue" onClick={onClick}>Criar</Button>
       </Styled.ButtonContainer>
     </Styled.Container>
   )
