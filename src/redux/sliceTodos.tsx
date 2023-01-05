@@ -5,14 +5,18 @@ export interface ToDo {
   task: string
 }
 
-const INITIAL_STATE: ToDo[] = []
+const INITIAL_STATE: ToDo[] = [
+  {title: 'opa', task: 'fazer'}
+]
 
 const sliceTodos = createSlice({
   name: "Todos",
   initialState: INITIAL_STATE,
   reducers: {
     addTodo(state, action) {
-      ;[...state, { title: action.payload, task: action.payload }]
+    state.push(
+      action.payload 
+    ) 
     },
   },
 })
