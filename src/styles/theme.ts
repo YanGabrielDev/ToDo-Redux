@@ -5,6 +5,7 @@ export const theme: ThemeInterface = {
         green: "#02d91f",
         red: '#ff0303',
         text: "#00000",
+        white: '#ffffff',
         blue: "#0564fc",
         ciano: "#05aefc",
         gray: "#8c8c8c",

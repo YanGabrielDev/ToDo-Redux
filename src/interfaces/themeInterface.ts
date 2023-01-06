@@ -5,6 +5,7 @@ export interface ThemeInterface{
           text?: string,       
           ciano?: string,       
           blue?: string,       
+          white?: string
           gray?: string,
           opacityBlack?: string      
       }
