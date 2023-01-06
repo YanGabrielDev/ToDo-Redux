@@ -1,7 +1,7 @@
 import { MouseEventHandler, ReactNode, useState } from "react"
 import { useDispatch } from "react-redux"
 import { Button } from "../Button"
-import * as Styled from "./styles"
+import * as Styled from "./styled"
 export interface FormInterface {
   title: string
   task: string
@@ -24,9 +24,8 @@ export const Form = ({
         value={title}
         onChange={(e) => handleChangeTitle(e)}
         placeholder="Título"
-        />
+      />
 
-        
       <Styled.Task
         value={task}
         onChange={(e) => handleChangeTask(e)}
@@ -34,7 +33,9 @@ export const Form = ({
         rows={5}
       />
       <Styled.ButtonContainer>
-        <Button color="blue" onClick={onClick}>Criar</Button>
+        <Button color="blue" onClick={onClick}>
+          Criar
+        </Button>
       </Styled.ButtonContainer>
     </Styled.Container>
   )
