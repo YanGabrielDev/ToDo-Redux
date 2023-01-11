@@ -4,6 +4,9 @@ export const theme: ThemeInterface = {
     colors:{
         green: "#02d91f",
         red: '#ff0303',
+        darkBlue: '#1e1f24',
+        softBlack: '#050505',
+        softBlack2: '#262626',
         text: "#00000",
         white: '#ffffff',
         blue: "#0564fc",
