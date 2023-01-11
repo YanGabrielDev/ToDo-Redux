@@ -8,6 +8,7 @@ overflow: hidden;
 border-radius: 24px;
 margin-top: 3rem;
 box-shadow: -1px 0px 5px 7px rgba(0,0,0,0.12);
+background-color: ${theme.colors.softBlack2};
 
 `}
 `
