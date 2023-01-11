@@ -2,6 +2,9 @@ export interface ThemeInterface{
       colors?:{
           green?: string,
           red?: string,
+          softBlack?: string,
+          darkBlue?: string,
+          softBlack2?: string,
           text?: string,       
           ciano?: string,       
           blue?: string,       
