@@ -7,7 +7,7 @@ box-shadow: -1px 0px 5px 7px rgba(0,0,0,0.12);
 height: auto;
 border-radius: 24px;
 padding: 0 24px;
-margin-top: 5rem;
+margin-top: 18px;
 overflow: hidden;
 background-color: ${theme.colors.softBlack2};
 
@@ -33,7 +33,7 @@ ${({theme}) => css`
 padding: 20px;
 border: none;
 outline: none;
-margin: 20px;
+margin: 0px 20px;
 width: 90%;
 background-color: ${theme.colors?.softBlack2};
 font-size: 20px;
