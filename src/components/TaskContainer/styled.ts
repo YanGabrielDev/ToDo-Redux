@@ -28,7 +28,7 @@ export const Task = styled.p`
 padding: 20px;
 border: none;
 outline: none;
-margin: 20px;
+margin: 0px 20px;
 width: 90%;
 font-size: 20px;
 
