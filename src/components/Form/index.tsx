@@ -30,7 +30,7 @@ export const Form = ({
         value={task}
         onChange={(e) => handleChangeTask(e)}
         placeholder="Tarefa"
-        rows={5}
+        rows={3}
       />
       <Styled.ButtonContainer>
         <Button color="blue" onClick={onClick}>
