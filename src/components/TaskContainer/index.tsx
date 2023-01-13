@@ -3,7 +3,7 @@ import {ButtonContainer} from '../Form/styled'
 import { Button } from "../Button"
 import { MouseEventHandler } from "react"
 import { deleteTodo } from "../../redux/sliceTodos"
-interface TaskContainer {
+export interface TaskContainer {
   title: string
   task: string
   deleteTodo:  MouseEventHandler<HTMLButtonElement>
