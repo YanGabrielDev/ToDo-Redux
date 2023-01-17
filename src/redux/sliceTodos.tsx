@@ -20,11 +20,13 @@ const sliceTodos = createSlice({
     ) 
     },
     deleteTodo(state, action) {
-   let opa = state.filter((todo, index) => action.payload !== index)
-     return opa;
-     
-     
+   let newList = state.filter((todo, index) => action.payload !== index)
+     return newList;
     },
+    deletes(state, action) {
+      let opa = state.filter((todo, index) => action.payload == todo)
+        return opa;
+       },
   },
 })
 
